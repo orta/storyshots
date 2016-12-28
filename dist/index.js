@@ -93,7 +93,7 @@ function testStorySnapshots() {
             var _loop2 = function _loop2() {
               var story = _step2.value;
 
-              if (options.storyRegex && options.storyRegex.match(story.name)) {
+              if (options.storyRegex && story.name.match(options.storyRegex)) {
                 return 'continue';
               }
 
